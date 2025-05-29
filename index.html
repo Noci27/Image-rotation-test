@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Select an Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One" rel="stylesheet">
+    <script src="dyn.js" defer></script>
+</head>
+<body>
+    <div class="positioning">
+        <div class="menu">  <!--rainbow border on hover??-->
+            <label for="filePick">Select an Image</label>
+            <input type="file" accept="image/*" id="filePick">
+        </div>
+        <div class="menuBR">
+            <label for="fileSwitch">Change Image</label>
+            <input type="file" accept="image/*" id="fileSwitch">
+        </div>
+        <div id="container">
+            <img id="img" draggable="false">
+        </div>
+        <div class="superSneakyCheckboxForAwesomeSpinMode">
+            <input type="checkbox" id="check">
+            <label for="check">Spin Mode</label>
+        </div>
+    </div>
+    <audio src="funkytowm low poly.mp3" id="beepBop" loop preload="auto"></audio>
+</body>
+</html>
